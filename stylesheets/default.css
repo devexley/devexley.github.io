@@ -1,0 +1,81 @@
+html {
+	height: 100%;
+	width:	100%;
+	font-family: Helvetica;
+}
+
+header {
+
+	background-color: #0C5BE8;
+	padding: 2em;
+	text-align: center;
+
+}
+
+
+
+
+.menu a {
+	list-style-type: none;
+	margin: 50px;
+	float: right;
+	text-decoration: none;
+	z-index: 1;
+	font-weight: bold;
+}
+
+img {
+	padding: 2em;
+	display: block;
+	float: left;
+}	
+
+footer {
+	position: fixed;
+	top: 90%;
+	background-color: #0C5BE8;
+	padding: 2em;
+	clear: both;
+	width: 100%;
+	margin-left: -10px;
+}
+
+#social {
+	position: fixed;	
+	top: 85%;
+	clear:both;
+}
+
+#social a {
+	
+	list-style-type: none;
+	margin: 50px;
+	float: left;
+	text-decoration: none;
+	z-index: 1;
+	font-weight: bold;
+
+
+}
+
+.technical-blog {
+	
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	border: 2px solid #0C5BE8;
+	padding: 4px;
+
+	
+}
+
+.cultural-blog {
+
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	border: 2px solid #0C5BE8;
+	padding: 4px;
+}
+
+
