@@ -69,6 +69,11 @@ footer {
 	
 }
 
+.technical-blog a {
+	display: block;
+	padding: 1px;
+	border: 1px solid #0C5BE8;
+}
 .cultural-blog {
 
 	position: absolute;
@@ -77,5 +82,10 @@ footer {
 	border: 2px solid #0C5BE8;
 	padding: 4px;
 }
+
+.cultural-blog a {
+	display: block;
+	padding: 1px;
+	border: 1px solid #0C5BE8;
 
 
