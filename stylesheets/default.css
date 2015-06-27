@@ -27,8 +27,8 @@ header {
 	font-size: 20px;
 }
 
-.photo {
-	padding: 4em;
+#photo {
+	padding: 2em;
 	float: left;
 	margin: 20px;
 }	
