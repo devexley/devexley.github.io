@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title>Dev Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+
+<main>
+    <header>
+      
+        <h1>Devesh Patel</h1>
+
+      
+    </header>
+
+      <nav>
+      <div class="menu">
+        <a href=#>Contact</a>
+        <a href=#>Projects</a>
+        <a href="index.html">Blog</a>
+        <a href=#>About</a>
+        <a href="../index.html">Home</a>
+      </div>
+      </nav>
+
+  <h1>Ruby Arrays & Hashes</h1>
+  <h2>The Difference</h2>
+  <h4>June 25, 2015</h4>
+
+  <section class="blog">
+    <p>
+      Arrays & Hashes are collection objects used to store and retreive data.  In general, an array is like a numbered list of items.  The number is the key and the item is the value for that key.  This makes arrays sequential in the way they store data. Hashes allow a key-value pairing, meaning you can create any kind of unique key (it does not have to be an integer) and have an associated value. This makes hashes non-sequential in the way they store data.  
+
+      <p>Here is a simple example of an array declaration.</p>
+    </p>
+    <code>array = ["ham", "bread", "mustard"]</code>
+    <p>
+      The integer key starts as 0,1,2... and so on for each element.  Since the key for each element (item) is an integer you can access the value by the following:  
+    </p>
+    <code>array[0] </code>
+    <p>
+    So array[0] would give the value "ham" while array[2] would give the value "mustard".
+    </p>
+    <p>
+      Hashes are more like a dictionary in the way they work.  The key is a look up for the value like a word is for a definition.  Both can be any value type. Here is a simple declaration of a Hash.
+    </p>
+    <code>sounds = {dog => "bark", cat => "meow", cow => "moo"}</code>
+    <p>
+      Notice that we are declaring a bunch of key-value pairs. In this example a key would be "dog" and its value would be "bark".  To access the value you would use the following:
+    </p>
+    <code>sounds["dog"]</code>
+    <p>
+      So when should you use each?  An array should be used for lists which only need an integer index to iterate through.  It is useful for storing values sequentially without any association.  A hash on the other hand can be used to store associations such as the example given above.  If I wanted a collection that stores relationships I would use a hash. But if I wanted to just have a list of things than I would use an array.  So this should give you a general primer of the difference between arrays and hashes.
+    </p>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
