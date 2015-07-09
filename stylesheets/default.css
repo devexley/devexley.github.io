@@ -4,103 +4,151 @@ html {
 	font-family: Helvetica;
 }
 
+body {
+	background-color: #FF9A00;
+}
 header {
 
-	background-color: #0C5BE8;
+	background-color: #062944;	
 	padding: 2em;
 	text-align: center;
-	width: 100%;
-	margin-left: -10px;
+	margin: auto;
+	width: 50%;
+	/* margin-left: -10px; */
+	color: white;
+	border-radius: 10px;
 
 }
 
 
 
-
-.menu a {
-	list-style-type: none;
-	margin: 50px;
+.menu {
+	display: inline-block;
 	float: right;
-	text-decoration: none;
+	margin-right: 10%;
+	
+}
+
+.menu ul {
+	list-style-type: none;
+	/* margin: 50px; */
+	/*float: right; */
+	position: relative;
+	margin-right: 5%;
 	z-index: 1;
 	font-weight: bold;
 	font-size: 20px;
+	padding-left: 1em;
+
+}
+
+.menu li {
+
+	padding: 1em;
+}
+.menu a {
+
+	text-decoration: none;
+
 }
 
 #photo {
-	padding: 2em;
-	float: left;
-	margin: 20px;
-}	
 
+	margin-left: 35%; 
+	position: absolute;
+	display: inline-block;
+	min-height: 95%;
+	min-width: 95%;
+	padding-right: 1em;
+	margin-right: 20%;
+}
+
+#photo img {
+
+	min-width: 25%;
+	max-width: 25%;
+	padding: 1em;
+
+}	
+/*
 footer {
-	position: fixed;
-	top: 90%;
-	background-color: #0C5BE8;
+	position: relative;
+	top: 90%; 
+	background-color: #062944;
 	padding: 2em;
 	clear: both;
 	width: 100%;
 	margin-left: -10px;
 }
+*/
 
-#social {
-	position: fixed;	
-	top: 85%;
-	clear:both;
+footer {
+	background-color: #062944;
+	font-size: 9pt;
+	width: 50%;
+	margin: auto;
+	border-radius: 10px;
+	padding: 1em;
+	clear: both;
+	color: white;
+}
+.social {
+	margin-left: 36%;
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	text-align: left;
+
 }
 
-#social a {
+.social ul {
 	
 	list-style-type: none;
 	margin: 40px;
-	float: left;
 	text-decoration: none;
 	z-index: 1;
 	font-weight: bold;
+	text-align: left;
 	
 
 
 }
 
-.technical-blog {
-	
-	position: absolute;
-	top: 40%;
-	left: 15%;
-	border: 4px solid #0C5BE8;
-	padding: 50px;
-	padding-right: 200px;
-	border-radius: 5%;
-	display: inline-block;
-	margin; auto;
-	
+.social li {
+	padding-bottom: 1em;
 }
 
-.technical-blog a {
-	display: block;
-	padding: 2px;
-	border: 2px solid #0C5BE8;
-}
-.cultural-blog {
+.social a {
 
-	position: absolute;
-	top: 40%;
-	left: 55%;
-	border: 4px solid #0C5BE8;
-	padding: 50px;
-	padding-right: 200px;
-	border-radius: 5%;
-	display: inline-block;
-}
-
-.cultural-blog a {
-	display: block;
-	padding: 2px;
-	border: 2px solid #0C5BE8;
+	text-decoration: none;
 }
 
 .blog {
-	width: 80%;
+	width: 50%;
 	margin: auto;
+	text-align: left;
+	padding: 1em;
 
+}
+
+.blog ul {
+	text-decoration: none;
+}
+
+.blog li {
+	
+	list-style-type: none;
+	padding: 2px;
+}
+
+.blog-header {
+
+	font-family: 'Lobster';
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	color: #71777F;
+	font-weight: bold;
+	font-size: 20px;
+	
 }
