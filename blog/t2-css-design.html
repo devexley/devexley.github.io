@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>Dev Blog</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-</head>
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Shadows+Into+Light' rel='stylesheet' type='text/css'>
 
+</head>
+<body>
 <main>
     <header>
       
@@ -14,19 +17,22 @@
     </header>
 
       <nav>
-      <div class="menu">
-        <a href=#>Contact</a>
-        <a href=#>Projects</a>
-        <a href="index.html">Blog</a>
-        <a href=#>About</a>
-        <a href="../index.html">Home</a>
-      </div>
+        <div class="menu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href=#>About</a></li>
+            <li><a href=#>Contact</a></li>
+            <li><a href=#>Projects</a></li>
+            <li><a href="index.html">Blog</a></li>
+          </ul>      
+        </div>
       </nav>
 
-  <h1>Learning CSS</h1>
-  <h2>The Box Model</h2>
-  <h4>June 20, 2015</h4>
-
+  <section class="blog-header">
+    <h1>Learning CSS</h1>
+    <h2>The Box Model</h2>
+    <h4>June 20, 2015</h4>
+  </section>
   <section class="blog">
     <p>The box model is integral part of elements in CSS positioning.  It consists of the content, padding, border, and margin.  Each is a nested box allowing fine tuning of positioning an element's content.  First you have the content element, such as a paragraph.  This is surrounded by a padding box which you can change the dimensions to provide a cushion for the content or add color attributes. Wrapping this is a border box which you can also change the dimensions of and provide a colored border to outline the content and padding.  Finally the margin box, which is transparent, allows you to position the element in relation to other elements.
           </p>
@@ -42,3 +48,5 @@
       <!-- copy and paste as many sections as you want to add paragraphs -->
   </section>
 </main>
+</body>
+</html>
