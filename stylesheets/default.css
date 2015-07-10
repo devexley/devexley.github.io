@@ -3,7 +3,10 @@ html {
 	width:	100%;
 	font-family: Helvetica;
 }
+#wrapper {
+	display: absolute;
 
+}
 body {
 	background-color: #FF9A00;
 }
@@ -35,6 +38,7 @@ header {
 	/*float: right; */
 	position: relative;
 	margin-right: 5%;
+	text-decoration: none;
 	z-index: 1;
 	font-weight: bold;
 	font-size: 20px;
@@ -54,19 +58,20 @@ header {
 
 #photo {
 
-	margin-left: 35%; 
 	position: absolute;
 	display: inline-block;
-	min-height: 95%;
-	min-width: 95%;
-	padding-right: 1em;
-	margin-right: 20%;
+	/*max-height: 308px;
+	max-width: 450px; */
+	width: 34%;
+	padding: 1em;
+	left: 32%;
+	/*min-width: 30px;
+	min-height: 45px;*/
+
 }
 
 #photo img {
 
-	min-width: 25%;
-	max-width: 25%;
 	padding: 1em;
 
 }	
