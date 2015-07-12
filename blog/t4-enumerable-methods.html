@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dev Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<main>
+    <header>
+      
+        <h1>Devesh Patel</h1>
+
+      
+    </header>
+
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href=#>About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href=#>Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  <section class="blog-header">    
+    <h1>Enumerables</h1>
+    <h2>The Map Method</h2>
+    <h4>July 11, 2015</h4>
+  </section>
+
+
+
+  <section class="blog">
+
+    <p>
+      Ruby has an enumerable method called "map" which allows you to transform values iterating over an array.  It takes a block and executes it for each element of an enumerable object such as an array.  The object therefore has to have an "each" method to utilize "map".  There is the non-destructive <strong>map</strong> which outputs a new array and a destructive <strong>map!</strong> which updates the original array.
+    </p>
+    <p>
+       Here is an example syntax of the non-destructive <strong>map</strong> function which takes the original array list = [1,2,3,4,5] and returns the square of each in a new array.
+    </p>
+
+      <code>list.map {|i| i ** 2} => [1, 4, 9, 16, 25]</code>
+      <code>list => [1, 2, 3, 4, 5]</code>
+
+    <p>
+     Notice we get the square return in a new array but the original array of list still contains the original values.  <strong>map!</strong> however is a destructive method and alters the original list as shown below.   
+    </p>
+      <code>list.map! {|i| i ** 2} => [1, 4, 9, 16, 25]</code>
+      <code>list => [1, 4, 9, 16, 25]</code>
+    <p>
+      This is very useful for executing a block on each element in an array to perform an operation according to the block expression because you can produce a new array preserving the original or update the original.
+    </p>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+</body>
+</html>

@@ -3,13 +3,14 @@ html {
 	width:	100%;
 	font-family: Helvetica;
 }
-#wrapper {
-	display: absolute;
 
+#wrapper {
+	position: relative;
 }
 body {
 	background-color: #FF9A00;
 }
+
 header {
 
 	background-color: #062944;	
@@ -22,8 +23,6 @@ header {
 	border-radius: 10px;
 
 }
-
-
 
 .menu {
 	display: inline-block;
@@ -156,4 +155,10 @@ footer {
 	font-weight: bold;
 	font-size: 20px;
 	
+}
+
+code {
+	background-color: #FFFFFF;
+	padding: 1em;
+	border: 1px solid black;
 }
