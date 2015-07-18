@@ -162,3 +162,10 @@ code {
 	padding: 1em;
 	border: 1px solid black;
 }
+
+pre {
+	background-color: #FFFFFF;
+	padding: 1em;
+	border: 1px solid black;
+	overflow: auto;
+}

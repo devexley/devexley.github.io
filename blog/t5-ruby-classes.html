@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dev Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<main>
+    <header>
+      
+        <h1>Devesh Patel</h1>
+
+      
+    </header>
+
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href=#>Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  <section class="blog-header">    
+    <h1>Technical Blog Entry</h1>
+    <h2>Ruby Classes</h2>
+    <h4>July 17, 2015</h4>
+  </section>
+
+
+
+  <section class="blog">
+    <p>
+      In the real world, you can take a blueprint for a house and construct many houses fromt that blueprint.  In Ruby classes accomplish a similar task. Ruby classes are objects which allow you to group behaviour and properties that mimic real world objects.  I think of classes as a blueprint.  But they are much more than that.  Let us take a simple example of a class in Ruby below. 
+    </p>
+    <p>
+      <pre>
+          class Cat 
+            attr_accessor :name 
+
+            def initialize(name)
+              @name = name
+            end
+
+            def meow
+              puts "Meow!"
+            end
+
+            def cat_name
+              puts "The cat's name is #{@name}."
+            end
+
+          end
+    </pre>
+    </p>
+      Classes are constructed with the keywords class and end and the class information is sandwiched between them.  The simple example above is a class called Cat which contains some attributes and methods which might define a cat.  In this case a name and a meow method/function.  We initialize a new instance of the Cat class with a name.
+    <p>
+    <code>cat = Cat.new("Oni")</code>
+        
+    </p>
+    <p>
+      So now we have a cat object that is an instance of the Cat class and we can call its methods and it will execute the code for that method. In this case, we have two instance methods and one instance variable.  The instance variable is denoted by &#64;name and the methods are denoted by the def and end keywords. Calling the methods produces the following outputs.
+    </p>
+    <code>cat.meow => "Meow!"</code>
+    <code>cat.cat_name => "The cat's name is Oni."</code>  
+    <p>
+      We only created one instance of the Cat class here but the beauty of classes is that you can create multiple instances (copies) of cat and each would retain its own set of instance information.  We also have the attr_accessor :name which allows us to read or write the attribute (like a getter and setter) for name.  This means if we wanted we can change the name of the cat to a different name.
+    </p>
+    <pre>cat.name  => Oni
+         cat.name = "Lefty"
+         cat.name => Lefty
+         cat.cat_name => "The cat's name is Lefty."
+    </pre>
+    <P>
+      Above we asked for cat.name and got what we originally set it to.  Then we changed the name to "Lefty" and called again and see that we changed the name.  We also call the method and notice since the instance variable was set to a different name that the method returns the new cat name.  The attr_accessor allowed us to do that because &#64;name is automatically synonymous with the symbol :name in Ruby as a convention.  Ruby also allows just read or write by using attr_reader or attr_writer as your needs for the class dictate.  There is a lot more to know about classses but this provides a simple example of the mechanisms of how it works.
+    </P>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+</body>
+</html>
