@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cheat Sheet</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/cheat_sheet.css">
+</head>
+<body>
+     <h1>git Commands Are FUN</h1>
+
+    <section class="list">
+        <ul>
+            <div class="box">
+                <li>git clone &ltname of the repo&gt</li>
+                <p>clone the repository specified by &ltrepo&gt; this is similar to "checkout" in some other version control systems such as Subversion and CVS</p>
+            </div>
+            <div class="box">
+                <li>git add &ltfile1&gt, &ltfile2&gt, etc.</li>
+                <p>add file1, file2, etc... to the project</p>
+            </div>
+            <div class="box">
+                <li>git add .</li>
+                <p>add all files, even untracked files</p>
+            </div>
+            <div class="box">
+                <li>git rm</li>
+                <p>remove files from the repo</p>
+            </div>
+            <div class="box">
+                <li>git stage &ltfile&gt</li>
+                <p>add file changes to the staging area</p>
+            </div>
+            <div class="box">
+                <li>git reset HEAD</li>
+                <p>remove files from staging area</p>
+            </div>
+            <div class="box">
+                <li>git mergetool</li>
+                <p>work through conflicted files by opening them in your mergetool (opendiff, kdiff3, etc.) and choosing left/right chunks. The merged result is staged for commit.</p>
+            </div>
+            <div class="box">
+                <li>git fetch &ltremote&gt</li>
+                <p>Retrieves all branches from the remote repository. After this 'git branch --track ...' can be used to track a branch from the new remote.</p>
+            </div>
+            <div class="box">
+                <li>git pull &ltremote&gt &ltbranch&gt git push</li>
+                <p>For branches that are remotely tracked (via git push) but that complain about non-fast forward commits when doing a git push. The pull synchronizes local and remote, and if all goes well, the result is pushable.</p>
+            </div>
+        </ul>
+        <p><a href="http://cheat.errtheblog.com/s/git"> Cheat sheet reference web page</a>
+
+        </p>
+    </section>
+</body>
+</body>
+</html>
